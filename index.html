@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog UI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="site-header__brand">
+        <span class="badge badge--subtle">3</span>
+        <div>
+          <p class="eyebrow">Alisha's Notebook</p>
+          <p class="eyebrow eyebrow--muted">Stories on design, code & everyday life</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="#" class="nav-link nav-link--active">Home</a>
+        <a href="#" class="nav-link">Articles</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link nav-link--pill">Subscribe</a>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <section class="layout-main">
+        <article class="hero-card">
+          <div class="hero-card__meta">
+            <span class="badge">Featured</span>
+            <span class="meta-text">5 min read · Design Systems</span>
+          </div>
+          <h1 class="display">Designing a Calm Reading Experience</h1>
+          <p class="lead">
+            Thoughtful typography, generous spacing, and a focused layout turn a basic blog into
+            a pleasure to read. This static blog UI is built from a small set of reusable components.
+          </p>
+          <div class="hero-card__footer">
+            <div class="avatar">
+              <div class="avatar__circle">A</div>
+              <div>
+                <p class="text-sm text-strong">Alisha Baiju</p>
+                <p class="text-xs text-muted">Updated Dec 19, 2025</p>
+              </div>
+            </div>
+            <button class="btn btn--primary">Continue reading</button>
+          </div>
+        </article>
+
+        <section class="section">
+          <header class="section__header">
+            <h2 class="h2">Latest articles</h2>
+            <a href="#" class="link-inline">View all</a>
+          </header>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <p class="meta-text">UI Patterns · 7 min read</p>
+              <h3 class="h3 card__title">Building reusable cards for any content</h3>
+              <p class="text-body">
+                Learn how to define a card pattern once and reuse it for posts, resources,
+                and announcements without rewriting markup.
+              </p>
+              <a href="#" class="link-inline">Read article</a>
+            </article>
+
+            <article class="card">
+              <p class="meta-text">Typography · 4 min read</p>
+              <h3 class="h3 card__title">A simple type scale for blogs</h3>
+              <p class="text-body">
+                Start with a few carefully chosen font sizes and weights to create hierarchy
+                without overwhelming the reader.
+              </p>
+              <a href="#" class="link-inline">Read article</a>
+            </article>
+
+            <article class="card">
+              <p class="meta-text">Workflow · 6 min read</p>
+              <h3 class="h3 card__title">Design once, reuse everywhere</h3>
+              <p class="text-body">
+                Use small primitives like badges, pills, and layout grids to build flexible
+                pages that stay consistent as your blog grows.
+              </p>
+              <a href="#" class="link-inline">Read article</a>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <aside class="layout-aside">
+        <section class="section section--aside">
+          <h2 class="h4">Topics</h2>
+          <div class="pill-group">
+            <button class="pill pill--active">All</button>
+            <button class="pill">Design</button>
+            <button class="pill">Frontend</button>
+            <button class="pill">Writing</button>
+          </div>
+        </section>
+
+        <section class="section section--aside">
+          <h2 class="h4">Popular this week</h2>
+          <ul class="stack stack--sm">
+            <li>
+              <a href="#" class="link-block">
+                <p class="text-sm text-strong">Choosing the right line length</p>
+                <p class="text-xs text-muted">Keep reading comfortable on any screen.</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link-block">
+                <p class="text-sm text-strong">Subtle microinteractions in static UIs</p>
+                <p class="text-xs text-muted">Delight without distraction.</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link-block">
+                <p class="text-sm text-strong">Color systems for content-heavy sites</p>
+                <p class="text-xs text-muted">Light, dark, and everything between.</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section section--aside section--accent">
+          <h2 class="h4">Stay in the loop</h2>
+          <p class="text-body">
+            Get a monthly email with new articles on design systems, typography,
+            and thoughtful product UI.
+          </p>
+          <form class="stack stack--sm">
+            <input class="field" type="email" placeholder="alisha@myblog.com" />
+            <button type="submit" class="btn btn--secondary">Subscribe</button>
+          </form>
+          <p class="text-xs text-muted">No spam. Unsubscribe anytime.</p>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p class="text-xs text-muted">© 2025 Blog UI. Crafted with a focus on readability.</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+
